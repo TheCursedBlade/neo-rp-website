@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Neo Roleplay Server</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
+  <style>
+    /* Base Styles */
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Inter', sans-serif; color: #f4f4f4; background-color: #111; }
+    a { text-decoration: none; }
+    img { display: block; }
+
+    /* Container */
+    .container { width: 90%; max-width: 1200px; margin: 0 auto; }
+
+    /* Hero Section */
+    .hero {
+      position: relative;
+      height: 100vh;
+      overflow: hidden;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+    }
+
+    .hero-bg {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      z-index: 0;
+    }
+
+    .hero::after {
+      content: '';
+      position: absolute;
+      top: 0; left: 0; right: 0; bottom: 0;
+      background: rgba(0, 0, 0, 0.6);
+      z-index: 1;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 2;
+      max-width: 800px;
+      padding: 1rem;
+    }
+
+    .hero-logo {
+      width: 200px;
+      margin: 0 auto 1rem;
+      display: block;
+    }
+
+    .hero-title {
+      font-size: 3rem;
+      font-weight: 800;
+      margin-bottom: 0.5rem;
+    }
+
+    .hero-subtitle {
+      font-size: 1.25rem;
+      font-weight: 400;
+      margin-bottom: 1.5rem;
+      opacity: 0.85;
+    }
+
+    .btn {
+      display: inline-block;
+      background-color: #7289da;
+      color: #fff;
+      padding: 0.75rem 1.5rem;
+      border-radius: 0.5rem;
+      font-weight: 600;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #5b6eae;
+    }
+
+    /* Footer */
+    footer {
+      text-align: center;
+      padding: 2rem 0;
+      font-size: 0.875rem;
+      color: #888;
+    }
+  </style>
+</head>
+<body>
+  <header class="hero">
+    <!-- Hero background image -->
+    <img src="background.png" alt="Neo Roleplay Cityscape" class="hero-bg" />
+
+    <div class="hero-content container">
+      <img src="Neo-trans.png" alt="Neo Roleplay Logo" class="hero-logo" />
+      <h1 class="hero-title">Welcome to Neo Roleplay</h1>
+      <p class="hero-subtitle">A brand-new GTA V roleplay server under development. Join us and shape the future of roleplay.</p>
+      <a href="https://discord.gg/NUubS2mv8Q" class="btn" target="_blank" rel="noopener">Join our Discord</a>
+    </div>
+  </header>
+
+  <footer>
+    &copy; 2025 Neo Roleplay. All rights reserved.
+  </footer>
+</body>
+</html>
